@@ -1,5 +1,5 @@
 ## Webdriverio setup 
-The porpouse is to use webdriverio to automate aplications in different emulated devices
+The porpouse is to use * [Webdriverio](http://webdriver.io/) - to automate aplications in different emulated devices
 
 ## Getting Started
 These instructions will give you information about how to run test cases using webdriverio in your local environment
@@ -77,4 +77,4 @@ Give an example
 ```
 
 ## Authors
-Noelia Grabowiecki - Initial work
+**Noelia Grabowiecki** - *Initial work*
