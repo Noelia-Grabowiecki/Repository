@@ -16,21 +16,21 @@ Webdriverio
 
 ## Running the tests
 
-# Create a test folder in your computer
+1. Create a test folder in your computer
 
 $ mkdir test && cd test
 
-# Inside the created folder, make sure you have Selenium server standalone and Geckodriver
+2. Inside the created folder, make sure you have Selenium server standalone and Geckodriver
 
-# Start Selenium Server Standalone 
+3. Start Selenium Server Standalone 
 
 $ java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.4.0.jar
 
-# Create a "test.js" to test if webdriverio is correctly working
+4. Create a "test.js" to test if webdriverio is correctly working
 
 $ touch test.js 
 
-# Paste the following in "test.js":
+5. Paste the following in "test.js":
 
 var webdriverio = require('webdriverio');
 var options = {
@@ -47,7 +47,7 @@ webdriverio
     })
     .end();
 
-# Run the created file "test.js"
+6. Run the created file "test.js"
 
 $ node test.js
 
@@ -61,5 +61,5 @@ Every section has the correct information
 Give an example
 
 
-Authors
+##Authors
 Noelia Grabowiecki - Initial work
