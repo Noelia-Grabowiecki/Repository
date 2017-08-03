@@ -1,10 +1,10 @@
-Webdriverio setup 
+## Webdriverio setup 
 The porpouse is to use webdriverio to automate aplications in different emulated devices
 
-Getting Started
+## Getting Started
 These instructions will give you information about how to run test cases using webdriverio in your local environment
 
-Prerequisites
+## Prerequisites
 Make sure you have installed in your local: 
 
 Node Js
@@ -14,23 +14,23 @@ Geckodriver
 Chromedriver 
 Webdriverio 
 
-Running the tests
+## Running the tests
 
-* Create a test folder in your computer
+# Create a test folder in your computer
 
 $ mkdir test && cd test
 
-* Inside the created folder, make sure you have Selenium server standalone and Geckodriver
+# Inside the created folder, make sure you have Selenium server standalone and Geckodriver
 
-*  Start Selenium Server Standalone 
+# Start Selenium Server Standalone 
 
 $ java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.4.0.jar
 
-* Create a "test.js" to test if webdriverio is correctly working
+# Create a "test.js" to test if webdriverio is correctly working
 
 $ touch test.js 
 
-* Paste the following in "test.js":
+# Paste the following in "test.js":
 
 var webdriverio = require('webdriverio');
 var options = {
@@ -47,16 +47,16 @@ webdriverio
     })
     .end();
 
-* Run the created file "test.js"
+# Run the created file "test.js"
 
 $ node test.js
 
-Functional tests included
-- Each link works properly
+## Functional tests included
+Each link works properly
 
 Give an example
 
-- Every section has the correct information
+Every section has the correct information
 
 Give an example
 
