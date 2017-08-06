@@ -32,45 +32,26 @@ $ mkdir test && cd test
 $ java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.4.0.jar
 ```
 
-4. Create a "test.js" to test if webdriverio is correctly working
+4. Clone Noelia-Grabowiecki's repository
 
 ```
-$ touch test.js 
+$ git clone https://github.com/Noelia-Grabowiecki/Repository.git
 ```
 
-5. Paste the following in "test.js":
+5. Enter webdriverio-test and run the existent tests
 
 ```
-var webdriverio = require('webdriverio');
-var options = {
-    desiredCapabilities: {
-        browserName: 'firefox'
-    }
-};
-webdriverio
-    .remote(options)
-    .init()
-    .url('http://www.google.com')
-    .getTitle().then(function(title) {
-        console.log('Title was: ' + title);
-    })
-    .end();
-```
-
-6. Run the created file "test.js"
-
-```
-$ node test.js
+$ ./node_modules/.bin/wdio wdio.conf.js
 ```
 
 ## Functional tests included
-Each link works properly
+Each link at Home page is correct
 
 ```
 Give an example
 ```
 
-Every section has the correct information
+Every section at Home page has the correct information
 
 ```
 Give an example
