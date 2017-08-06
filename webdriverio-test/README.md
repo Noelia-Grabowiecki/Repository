@@ -45,16 +45,24 @@ $ ./node_modules/.bin/wdio wdio.conf.js
 ```
 
 ## Functional tests included
-Each link at Home page is correct
+Each section at Home page contains the correct title
 
 ```
-Give an example
+Opens webdriverio home page
+Asserts title
+Gets the 3 teaserbox titles
+Gets articles titles
+Gets footer title
 ```
 
-Every section at Home page has the correct information
+Every mainnav option redirects to the correct page
 
 ```
-Give an example
+Opens webdriverio home page 
+Clicks on I/O logo and gets the home title
+Clicks on Developer Guide option
+Clicks on API section option
+Clicks on Contribute option
 ```
 
 ## Authors
