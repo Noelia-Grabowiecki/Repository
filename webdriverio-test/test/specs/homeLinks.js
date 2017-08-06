@@ -46,15 +46,17 @@ describe('webdriver.io page', function() {
 	});
 });	
 
-// Clicks the latest api version
+// Clicks the button Get Started from Home Page
  
 describe('webdriver.io page', function() {
 	it('should demonstrate the click command', function () {
-    	var myButton = $('dropdownMenu1')
-    	myButton.click()
-    	var text = browser.getText('Latest');
-    	assert(text === 'Latest was clicked');
-	})
-}); 
+    	links = $$('.getstarted');
+            links.forEach(function (link) {
+            link.click('a=Get Started')
+            var text = browser.getText('#Developer-Guide');
+            console.log(text);
+        });
+    });
+});  
 
 
